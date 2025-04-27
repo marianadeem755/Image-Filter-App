@@ -214,12 +214,12 @@ def main():
 
         with col1:
             st.subheader("Original Image")
-            st.image(uploaded_file, use_column_width=True)
+            st.image(uploaded_file, use_container_width=True)
 
         with col2:
             st.subheader("Processed Image")
             final_pil = convert_image(final_image)
-            st.image(final_pil, use_column_width=True)
+            st.image(final_pil, use_container_width=True)
 
         # Download button
         st.markdown("---")
